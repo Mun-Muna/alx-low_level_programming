@@ -3,7 +3,14 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - print if a number is negative, porsitve or zero
+ * @parameterx: Description of parameter x
+(* 
+ * Description: Longer description of the function)?
+(* section header: Section description)*
+ * Return: Description of the returned value
+ */
 int main(void)
 {
 	int n;
@@ -12,10 +19,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-	    printf("%d is positive\n", n);
+		printf("%d is positive\n", n);
 	}
-	    else
-	    { 
+	else
+	{ 
 		if (n < 0)
 		{
 			printf("%d is negative\n", n);
@@ -24,7 +31,7 @@ int main(void)
 		{
 			printf("%d is zero\n", n);
 		}
-	    }
+	}
 
 	return (0);
 }
