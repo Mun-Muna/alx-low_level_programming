@@ -3,9 +3,8 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* *
+/**
  * main - Checks if the number's last digit is > 5 , 0 or < 6
- *
  * Return: The string stating the result of the function's check
  */
 int main(void)
