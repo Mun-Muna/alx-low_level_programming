@@ -5,9 +5,8 @@
 
 /**
  * main - Checks sign of the number or if it is a zero
- * @n: The number to be checked 
- * 
- * Return: Prints string stating whether the number is positive or negative or zero
+ *
+ * Return: String stating whether the number is positive or negative or zero
  */
 int main(void)
 {
@@ -20,7 +19,7 @@ int main(void)
 		printf("%d is positive\n", n);
 	}
 	else
-	{ 
+	{
 		if (n < 0)
 		{
 			printf("%d is negative\n", n);
