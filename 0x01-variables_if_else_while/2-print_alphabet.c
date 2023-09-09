@@ -2,8 +2,7 @@
 
 /**
  * main - Prints the alphabet in lowercase
- *
- * Result: String containing lowercase alphabet
+ * Return: String of lowercase alphabet
  */
 int main(void)
 {
