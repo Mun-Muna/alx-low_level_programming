@@ -4,12 +4,10 @@
 /* more headers goes there */
 
 /**
- * main - print if a number is negative, porsitve or zero
- * @parameterx: Description of parameter x
-(* 
- * Description: Longer description of the function)?
-(* section header: Section description)*
- * Return: Description of the returned value
+ * main - Checks sign of the number or if it is a zero
+ * @n: The number to be checked 
+ * 
+ * Return: Prints string stating whether the number is positive or negative or zero
  */
 int main(void)
 {
