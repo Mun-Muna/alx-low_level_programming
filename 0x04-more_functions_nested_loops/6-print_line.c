@@ -7,13 +7,9 @@ void print_line(int n)
 {
 	int i;
 
-	for (i = 1; i <= n; i++)
-	{
-		if (n <= 0)
-		{
-			break;
-		}
-		else
+	if (n > 0)
+	{		
+		for (i = 1; i <= n; i++)
 		{
 			_putchar('_');
 		}
