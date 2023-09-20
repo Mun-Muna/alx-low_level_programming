@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * _strcat - appends a string to another string
  * @src: string to be appended
@@ -7,14 +8,15 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, j, k;
+	int i, j;
 
-	for (i = 0, j = 0; dest[i] != '\0' && src[j] != '\0'; i++, j++)
+	for (i = 0; dest[i] != '\0'; i++)
 	{
 	}
-	for (k = 0; k <= j; k++, i++)
+	for (j = 0; src[j] != '\0'; j++, i++)
 	{
-		dest[i] = src[k];
+		dest[i] = src[j];
 	}
+	dest [i] = '\0';
 	return (dest);
 }
