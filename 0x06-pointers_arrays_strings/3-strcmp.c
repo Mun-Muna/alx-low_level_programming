@@ -1,5 +1,5 @@
 /**
- * strcmp - compares two strings
+ * _strcmp - compares two strings
  * @s1: points to string
  * @s2: points to string
  *
@@ -15,7 +15,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		return (0);
 	}
-	else 
+	else
 	{
 		return (s1[i] - s2[i]);
 	}
