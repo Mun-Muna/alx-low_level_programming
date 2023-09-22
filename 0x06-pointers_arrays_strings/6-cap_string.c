@@ -10,19 +10,22 @@ char *cap_string(char *s)
 	char c[] = " \t\n,;.!?\"(){}";
 
 	i = 0;
-	while (s[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; c[j] != '\0'; j++)
+		if ((s[i] >= 'a' && s[i] <= 'z') && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
 		{
-			if (s[i] == c[j])
+			if (i == 0)
 			{
-				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				s[i] = s[i] - 32;
+			}
+			for (j = 0; c[j] != '\0'; j++)
+			{
+				if (i > 0 && s[i - 1] == c[j])
 				{
-					s[i + 1] = s[i + 1] - 32;
+					s[i] = s[i] - 32;
 				}
 			}
 		}
-		i++;
 	}
 	return (s);
 }
