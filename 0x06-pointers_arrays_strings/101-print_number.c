@@ -5,27 +5,22 @@
  */
 void print_number(int n)
 {
-	int i, j, x;
+	int i;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
-	if (n == 0)
+	for (i = 10;; i *= 10)
 	{
-		_putchar(n + '0');
-	}
-	for (i = 10, j = 1;; i *= 10, j *= 10)
-	{
-		if ((n % i) / j == 0 && n % i == n)
+		if (n / i == 0)
 		{
 			break;
 		}
 	}
-	for (i = i / 10, j = j / 10 ; i >= 10 && j >= 1; i /= 10, j /= 10)
+	for (i /= 10; i >= 1; i /= 10 )
 	{
-		x = (n % i) / j;
-		_putchar(x + '0');
+		_putchar((n / i) % 10 + '0');
 	}
 }
