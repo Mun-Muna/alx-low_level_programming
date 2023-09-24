@@ -11,12 +11,12 @@ int main(void)
 	x = 1;
 	y = 2;
 	sum = 0;
-	for (i = 0; z <= 4000000; i++)
+	for (i = 0;; i++)
 	{
 		z = x + y;
 		x = y;
 		y = z;
-		if (z % 2 == 0)
+		if (z <= 4000000 && z % 2 == 0)
 			sum += z;
 	}
 	printf("%ld\n", z);
