@@ -18,7 +18,9 @@ int main(void)
 		y = z;
 		if (z <= 4000000 && z % 2 == 0)
 			sum += z;
+		if (z == 4000000)
+			break;
 	}
-	printf("%ld\n", z);
+	printf("%ld\n", sum);
 	return (0);
 }
