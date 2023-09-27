@@ -6,15 +6,14 @@
  * Return: pointer to string
  */
 char *_strpbrk(char *s, char *accept)
-{	
+{
 	while (*s)
 	{
 		while (*accept)
 		{
 			if (*accept == *s)
 			{
-				return (char*)(s);
-			
+				return (s);
 			}
 			accept++;
 		}
