@@ -8,7 +8,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *str_needle = needle;
-	
+
 	for (; *haystack; haystack++)
 	{
 		for (;; needle++)
@@ -16,7 +16,7 @@ char *_strstr(char *haystack, char *needle)
 			{
 				if (!*(needle + 1))
 				{
-					return (char *)(str_needle);
+					return (str_needle);
 				}
 				haystack++;
 			}
