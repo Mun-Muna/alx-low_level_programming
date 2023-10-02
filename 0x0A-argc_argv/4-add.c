@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - prints sum of positive numbers 
+ * main - prints sum of positive numbers
  * @argc: type integer
  * @argv: pointer type char
  *
