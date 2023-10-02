@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	long int total, i;
+	int total = 0, i;
 
 	for (i = 1; i < argc; i++)
 	{
@@ -20,10 +20,9 @@ int main(int argc, char *argv[])
 		}
 		else if (atoi(argv[i]) > 0)
 		{
-			total = 0;
 			total += atoi(argv[i]);
 		}
 	}
-	printf("%ld\n", total);
+	printf("%d\n", total);
 	return (0);
 }
