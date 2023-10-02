@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - print name of the program
+ * main - print number of coins
  * @argc: type integer
  * @argv: pointer type char
  *
- * Return: 0
+ * Return: 0 or 1
  */
 int main(int argc, char *argv[])
 {
