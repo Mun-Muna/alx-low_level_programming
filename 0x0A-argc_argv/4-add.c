@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 /**
  * main - prints sum of positive numbers
@@ -9,19 +10,19 @@
  */
 int main(int argc, char *argv[])
 {
-	int total = 0, i;
+	int total = 0, i, j;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) > 0 || *argv[i] == '0')
+		for(j = 0; argv[i][j] != '\0'; j++)
 		{
-			total += atoi(argv[i]);
+			if (!isdigit(argv[i][j]))
+			{	
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else if (atoi(argv[i]) <= 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
+		total += atoi(argv[i]);
 	}
 	printf("%d\n", total);
 	return (0);
