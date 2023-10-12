@@ -7,7 +7,7 @@
  *
  * Return: 0 if success.
  */
-int main(void)
+int main(int argc, char *argv[])
 {
 	if (argc != 2)
 	{
