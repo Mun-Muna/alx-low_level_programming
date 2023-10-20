@@ -4,7 +4,7 @@
 #include <stdio.h>
 /**
  * add_node - returns number of elements of a list
- * @h: pointer to struct
+ * @head: pointer to struct
  * @str: to be duplicated
  *
  * Return: address of new element.
