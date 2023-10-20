@@ -1,4 +1,7 @@
 #include <stdio.h>
+/**
+ * print1 - execute before main function
+ */
 void print1(void) __attribute__((constructor));
 void print1(void)
 {
