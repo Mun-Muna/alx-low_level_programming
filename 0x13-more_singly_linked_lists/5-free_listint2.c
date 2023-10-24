@@ -2,19 +2,18 @@
 #include <stdlib.h>
 /**
  * free_listint2 - frees a listint_t list
- * @head: pointer type listint_t
+ * @head: pointer to struct
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *ptr = NULL;
+	listint_t *next, *current;
 
-	while (*head)
+	current = *head;
+	while (current)
 	{
-		ptr = (*head)->next;
-		free(*head);
-		*head = ptr;
+		next = current->next;
+		free(current);
+		current = next;
 	}
-	free(*head);
 	*head = NULL;
 }
-
