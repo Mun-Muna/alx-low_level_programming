@@ -10,21 +10,20 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *current = head;
-	int i; 
+	int i;
 
 	i = 0;
 	while (head)
 	{
 		head = head->next;
 		i++;
-		printf ("%d\n", head->n);
+		printf("%d\n", head->n);
 		while (current)
 		{
 			if (head == current)
 				return (i);
-			else
-				current = current->next;
+			current = current->next;
 		}
 	}
-	exit (98);
+	exit(98);
 }
