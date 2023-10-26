@@ -25,9 +25,9 @@ int get_bit(unsigned long int n, unsigned int index)
 		}
 		if (i)
 			i = i - 1;
-		if (i  >= index)
+		if (i >= index)
 		{
-			if (s[i - index] == '1')
+			if (s[index] == '1')
 				return (1);
 			else
 				return (0);
