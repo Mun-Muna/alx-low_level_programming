@@ -6,7 +6,7 @@
 void print_binary(unsigned long int n)
 {
 	double rem = n * 0.5;
-	unsigned long int num = n * 0.5;
+	long int num = n * 0.5;
 
 	if (n == 0)
 	{
