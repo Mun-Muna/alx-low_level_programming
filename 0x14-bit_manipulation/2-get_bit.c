@@ -11,7 +11,7 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	double rem = n * 0.5;
 	unsigned long int num = n * 0.5;
-	unsigned int i;
+	unsigned long int i;
 	char s[64];
 
 		for (i = 0; rem; i++)
